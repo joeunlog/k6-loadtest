@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-k6
+  namespace: {{ include "k6-loadtest.namespace" . }}
+data:
+  k6.yaml: |-
+    {{- include "k6.yaml" . | nindent 4 -}}

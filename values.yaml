@@ -1,0 +1,15 @@
+# Default values for k6-loadtest.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+parallelism: 2
+
+image:
+  repository: dmsqlczzz/k6-prometheus
+  tag: "v0.3"
+
+affinity: {}
+
+serviceAccountName: k6-cronjob
+
+cronjobSchedule: "00 * * * *"
