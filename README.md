@@ -2,6 +2,8 @@
 
 You should deploy k6-operator first, and deploy k6-loadtest
 
+[k6-operator](https://github.com/joeunlog/k6-operator)
+
 ```
 helm install k6-loadtest . -n k6 --create-namespace
 ```
