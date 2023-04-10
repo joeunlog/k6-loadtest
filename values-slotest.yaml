@@ -1,0 +1,3 @@
+parallelism: 1
+
+cronjobSchedule: "23 * * * *"
