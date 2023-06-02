@@ -10,6 +10,9 @@ image:
 
 affinity: {}
 
+createServiceAccount: true
 serviceAccountName: k6-cronjob
 
 cronjobSchedule: "00 * * * *"
+
+k6_file: "k6.js"

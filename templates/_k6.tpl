@@ -9,7 +9,7 @@ metadata:
 spec:
   parallelism: {{ .Values.parallelism }}
   script:
-    configMap: 
+    configMap:
       name: {{ .Release.Name }}-js
       file: k6.js
   arguments: --out prometheus

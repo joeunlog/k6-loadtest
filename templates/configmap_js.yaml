@@ -5,4 +5,4 @@ metadata:
   namespace: {{ include "k6-loadtest.namespace" . }}
 data:
   k6.js: |-
-    {{- $.Files.Get "k6.js" | nindent 4 -}}
+    {{- $.Files.Get .Values.k6_file | nindent 4 -}}
